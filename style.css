@@ -1,17 +1,19 @@
 body {
-  margin: 0;
   font-family: 'Quicksand', sans-serif;
-  background-color: #e6f0fa;
+  margin: 0;
+  background-color: #e8f4fc;
   color: #333;
 }
 
 header {
+  background-image: url("header-bg.png"); /* Hier dein PNG */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: #d0e4f5;
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  justify-content: space-between;
 }
 
 .header-left {
@@ -23,35 +25,48 @@ header {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  object-fit: cover;
-  margin-right: 1rem;
+  margin-right: 15px;
 }
 
-.header-icons a {
-  margin-left: 1rem;
-  color: #333;
-  font-size: 1.2rem;
-  transition: color 0.3s;
+h1 {
+  font-size: 1.8rem;
+  margin: 0;
 }
 
-.header-icons a:hover {
-  color: #0077b6;
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+aside.kontakt {
+  width: 250px;
+  padding-right: 40px;
+}
+
+aside.kontakt h2 {
+  margin-top: 0;
+}
+
+aside.kontakt ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside.kontakt li {
+  margin-bottom: 10px;
+}
+
+aside.kontakt a {
+  text-decoration: none;
+  color: #0066cc;
 }
 
 main {
-  padding: 2rem;
-  text-align: center;
+  flex-grow: 1;
 }
 
 .intro h2 {
-  font-size: 2rem;
-  color: #004e7c;
-  margin-bottom: 1rem;
-}
-
-.intro p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  max-width: 600px;
-  margin: 0.5rem auto;
+  font-size: 1.5rem;
+  margin-top: 0;
 }
