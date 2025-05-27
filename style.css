@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-image: url("header-bg.png"); /* Hier dein PNG */
+  background-image: url("background.jpg"); /* Hier dein PNG */
   background-size: cover;
   background-position: center;
   color: white;
@@ -33,11 +33,15 @@ h1 {
   margin: 0;
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
+.kontakt-container {
+  width: 250px;
+  background-color: white;
   padding: 20px;
+  margin-left: 30px; /* Abstand vom linken Rand */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
 }
+
 
 aside.kontakt {
   width: 250px;
